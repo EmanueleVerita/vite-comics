@@ -129,7 +129,7 @@
               <a href="#" v-for="item in Sites">{{ item.text }}</a>
           </div>
           <div class="background-img">
-            <img class="logo-bg" src="/img/dc-logo-bg.png" alt="">
+            <img class="logo-bg" src="../assets/img/dc-logo-bg.png" alt="">
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
         <div class="icons">
           <h4>FOLLOW US</h4>
           <div v-for="logo in brands">
-            <img :src="'/img/' + logo.image" alt="">
+            <img :src="'../assets/img/' + logo.image" alt="">
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@
 }
 
 .background-section{
-  background-image: url('/img/footer-bg.jpg');
+  background-image: url('../assets/img/footer-bg.jpg');
   object-fit: cover;
 
   .link-section{

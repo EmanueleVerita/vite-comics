@@ -10,23 +10,23 @@
             return {
                 cards: [
                         {
-                            image: 'buy-comics-digital-comics.png',
+                            image: '/buy-comics-digital-comics.png',
                             text: 'digital comics'
                         },
                         {
-                            image: 'buy-comics-merchandise.png',
+                            image: '/buy-comics-merchandise.png',
                             text: 'dc merchandise'
                         },
                         {
-                            image: 'buy-comics-subscriptions.png',
+                            image: '/buy-comics-subscriptions.png',
                             text: 'subscription'
                         },
                         {
-                            image: 'buy-comics-shop-locator.png',
+                            image: '/buy-comics-shop-locator.png',
                             text: 'comic shop location'
                         },
                         {
-                            image: 'buy-dc-power-visa.svg',
+                            image: '/buy-dc-power-visa.svg',
                             text: 'dc power visa'
                         }
                     ],
@@ -63,7 +63,7 @@
         <div class="container">
             <div class="icons">
               <div class="blue-section-items" v-for="card in cards">
-                <img :src="'/img/' + card.image" alt="">
+                <img :src="'../assets/img/' + card.image" alt="">
                 <p>{{ card.text }}</p>
             </div>
           </div>
@@ -82,7 +82,7 @@
     }
 
     .jumbotron {
-        background-image: url('/img/jumbotron.jpg');
+        background-image: url('../assets/img/jumbotron.jpg');
         background-size: cover;
         height: 40vh;
     }
